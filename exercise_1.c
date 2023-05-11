@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <locale.h>
+#include <stdlib.h>
 
 // Prototipos
 void menu();
@@ -40,7 +41,8 @@ int main(){
     while (APP == 1){
         APP = main_app();
     }
-
+    system("pause");
+    return 0;
 }
 
 void menu(){

@@ -101,6 +101,38 @@ build ejem: C_EXECUTABLE_LINKER__ejem_Debug CMakeFiles/ejem.dir/ejemplo1.c.o
   TARGET_FILE = ejem
   TARGET_PDB = ejem.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target eje2
+
+
+#############################################
+# Order-only phony target for eje2
+
+build cmake_object_order_depends_target_eje2: phony || CMakeFiles/eje2.dir
+
+build CMakeFiles/eje2.dir/exercise_2.c.o: C_COMPILER__eje2_Debug /Users/paulcontreras/Documents/GitHub/funtions_in_c/exercise_2.c || cmake_object_order_depends_target_eje2
+  DEP_FILE = CMakeFiles/eje2.dir/exercise_2.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  INCLUDES = -I/Users/paulcontreras/Documents/GitHub/funtions_in_c/.
+  OBJECT_DIR = CMakeFiles/eje2.dir
+  OBJECT_FILE_DIR = CMakeFiles/eje2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eje2
+
+
+#############################################
+# Link the executable eje2
+
+build eje2: C_EXECUTABLE_LINKER__eje2_Debug CMakeFiles/eje2.dir/exercise_2.c.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15
+  OBJECT_DIR = CMakeFiles/eje2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eje2
+  TARGET_PDB = eje2.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -135,7 +167,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/paulcontreras/Documents/GitHub/funtions_in_c/cmake-build-debug
 
-build all: phony eje1 ejem
+build all: phony eje1 ejem eje2
 
 # =============================================================================
 # Built-in targets
